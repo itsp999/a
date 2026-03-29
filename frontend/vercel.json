@@ -5,8 +5,7 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "installCommand": "flutter/bin/flutter precache && flutter/bin/flutter config --enable-web",
-  "buildCommand": "flutter/bin/flutter build web --release",
-  "outputDirectory": "build/web",
-  "framework": null
+  "installCommand": "chmod +x build.sh",
+  "buildCommand": "bash build.sh",
+  "outputDirectory": "build/web"
 }
