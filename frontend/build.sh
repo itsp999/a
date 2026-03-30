@@ -7,5 +7,8 @@ export PATH="$PATH:$(pwd)/flutter/bin"
 flutter config --no-analytics
 flutter config --enable-web
 
+# Recreate web platform files for missing index.html
+flutter create --platforms=web .
+
 # Build the project
 flutter build web --release
